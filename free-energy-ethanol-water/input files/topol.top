@@ -1,0 +1,13 @@
+#include "charmm36-feb2026_cgenff-5.0.ff/forcefield.itp"
+#include "lig1.itp"
+#include "charmm36-feb2026_cgenff-5.0.ff/tip3p.itp"
+
+[ system ]
+; Name
+Ethanol in water
+
+[ molecules ]
+; Compound   #mols
+LIG1          1
+SOL           0
+SOL              2160
