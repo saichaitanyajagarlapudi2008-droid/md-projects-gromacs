@@ -7,3 +7,4 @@ Contains:
 - Topology (`topol.top` + lig1.itp)
 - Starting structure (lig1_box.gro)
 - Terminal screenshots for workflow reference
+- Final results obtained
