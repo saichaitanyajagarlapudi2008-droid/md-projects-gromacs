@@ -1,14 +1,19 @@
-# md-projects-gromacs
+# Analysis scripts
 
-Molecular dynamics projects run with GROMACS 2026 (built from source with GPU acceleration on Apple Silicon).
+Chain-conformation analysis for the PVC/DEHP simulations.
 
-| Project | What it is | Status |
-| --- | --- | --- |
-| [`pvc-dehp-density-fluctuations`](pvc-dehp-density-fluctuations/) | All-atom MD of PVC plasticised with DEHP (39.9 wt%), replicating Zhou & Milner, *Macromolecules* 2018, 51, 3865–3873 | Ongoing; results report included |
-| [`free-energy-ethanol-water`](free-energy-ethanol-water/) | Hydration free energy of ethanol by alchemical decoupling over 31 λ windows | Complete |
+| Script | What it does | Input | Output |
+| --- | --- | --- | --- |
+| `chain_ree.py` | End-to-end distance (Ree) and radius of gyration (Rg) of every PVC chain, frame by frame. Finds the carbon backbone from the `.itp` bonds and unwraps chains across periodic boundaries before measuring. | `.gro`, `.xtc`, chain `.itp`, number of chains | `chain_ree.csv`, `chain_ree_perchain.csv` |
+| `ree_vs_T.py` | Converts time to temperature for a linear cooling run and averages Ree and Rg in temperature bins. | `chain_ree.csv` | `ree_rg_vs_T.csv` |
 
-Each folder has its own README with methods and results.
+## Example
 
-## Tools
+```
+python chain_ree.py system.gro cool.xtc PVC20.itp 16 --stride 250
+python ree_vs_T.py chain_ree.csv --t0 600 --rate 6 --bin 10
+```
 
-GROMACS 2026 · ORCA · Multiwfn · Python (MDAnalysis, NumPy, pandas) · Bash
+Requirements: Python 3, MDAnalysis, NumPy, networkx, pandas.
+
+Scripts were written with AI assistance, then tested and adapted for this system.
