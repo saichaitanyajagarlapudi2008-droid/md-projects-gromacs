@@ -24,6 +24,11 @@ Alchemical decoupling of one ethanol molecule from water in GROMACS. This run fo
 | NPT | sd, 298 K, Parrinello–Rahman (τp = 1 ps) | 100 ps |
 | Production | sd, 298 K, Parrinello–Rahman (τp = 1 ps) | 1 ns |
 
+## Changes from the tutorial
+
+- **sc-alpha = 1.0 instead of the tutorial's 0.5.** In my earlier methane-in-water run, sc-alpha = 0.5 made the system blow up at λ = 0.25 and 0.8. A larger sc-alpha softens the core more strongly near the decoupled end, so I used 1.0 for every ethanol window.
+- **pme_order = 4 instead of 6.** GROMACS only runs PME on the GPU with order 4. The system is small, so the accuracy loss is minor.
+
 ## What I learned
 
 - **Why charges go first:** removing van der Waals while the charges are still on would let opposite charges on the solute and water collapse onto each other, so electrostatics are switched off before Lennard-Jones.
