@@ -40,7 +40,7 @@ init_lambda_state        = 15
 delta_lambda             = 0
 calc_lambda_neighbors    = 1        ; only immediate neighboring windows
 couple-moltype = LIG1    ; name of moleculetype to decouple
-couple-lambda0           = vdw-q    ; only van der Waals interactions
+couple-lambda0           = vdw-q    ; full interactions (vdW + Coulomb) at lambda 0
 couple-lambda1           = none     ; turn off everything, in this case only vdW
 couple-intramol          = no
 ; Vectors of lambda specified here
