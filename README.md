@@ -12,3 +12,5 @@ Each folder has its own README.
 ## Tools
 
 GROMACS 2026 · ORCA · Multiwfn · Python (MDAnalysis, NumPy, pandas) · Bash
+
+Build notes for GROMACS on Apple Silicon (OpenCL, LibTorch, CP2K QM/MM): [BUILD_NOTES.md](BUILD_NOTES.md)
