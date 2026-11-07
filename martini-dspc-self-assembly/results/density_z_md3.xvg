@@ -1,0 +1,74 @@
+# This file was created Thu Nov  5 18:57:08 2026
+# Created by:
+#                     :-) GROMACS - gmx density, 2026.3 (-:
+# 
+# Executable:   /opt/gromacs/bin/gmx
+# Data prefix:  /opt/gromacs
+# Working dir:  /Users/saichaitanyajagarlapudi/gromacs/Course Grain modelling
+# Command line:
+#   gmx density -f dspc-md3.xtc -s dspc-md3.tpr -n index.ndx -d Z -center -symm -o density_z_md3.xvg
+# gmx density is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "Symmetrized partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rest"
+    -3.82288           1.0499
+    -3.66684           4.9871
+    -3.51081          18.7096
+    -3.35477          47.0696
+    -3.19873          100.969
+     -3.0427          199.315
+    -2.88666          327.533
+    -2.73063          455.962
+    -2.57459          552.587
+    -2.41856          626.408
+    -2.26252          741.002
+    -2.10648          876.842
+    -1.95045          979.988
+    -1.79441          1040.71
+    -1.63838          1047.86
+    -1.48234          1084.57
+     -1.3263          1145.05
+    -1.17027          1095.91
+    -1.01423          1074.95
+   -0.858197          1100.94
+   -0.702161          1063.07
+   -0.546125          1081.71
+    -0.39009          1078.52
+   -0.234054          1025.74
+  -0.0780179           1085.4
+   0.0780179           1085.4
+    0.234054          1025.74
+     0.39009          1078.52
+    0.546125          1081.71
+    0.702161          1063.07
+    0.858197          1100.94
+     1.01423          1074.95
+     1.17027          1095.91
+      1.3263          1145.05
+     1.48234          1084.57
+     1.63838          1047.86
+     1.79441          1040.71
+     1.95045          979.988
+     2.10648          876.842
+     2.26252          741.002
+     2.41856          626.408
+     2.57459          552.587
+     2.73063          455.962
+     2.88666          327.533
+      3.0427          199.315
+     3.19873          100.969
+     3.35477          47.0696
+     3.51081          18.7096
+     3.66684           4.9871
+     3.82288           1.0499

@@ -1,0 +1,74 @@
+# This file was created Thu Oct  8 16:05:46 2026
+# Created by:
+#                     :-) GROMACS - gmx density, 2026.3 (-:
+# 
+# Executable:   /opt/gromacs/bin/gmx
+# Data prefix:  /opt/gromacs
+# Working dir:  /Users/saichaitanyajagarlapudi/gromacs/Course Grain modelling
+# Command line:
+#   gmx density -f dspc-md2.xtc -s dspc-md2.tpr -n index.ndx -d Z -center -symm -o density_z_rest_90ns.xvg
+# gmx density is part of G R O M A C S:
+#
+# GROwing Monsters And Cloning Shrimps
+#
+@    title "Symmetrized partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rest"
+    -2.01136          705.411
+    -1.92926          698.712
+    -1.84716           702.56
+    -1.76507          703.663
+    -1.68297          713.241
+    -1.60088          701.033
+    -1.51878          723.401
+    -1.43668          694.749
+    -1.35459          711.025
+    -1.27249          720.161
+     -1.1904           691.71
+     -1.1083          702.622
+     -1.0262          694.637
+   -0.944107          718.037
+    -0.86201          706.729
+   -0.779914          712.243
+   -0.697818          690.939
+   -0.615722          712.246
+   -0.533625          723.339
+   -0.451529          714.685
+   -0.369433          719.147
+   -0.287337          701.017
+   -0.205241          700.879
+   -0.123144          695.862
+  -0.0410481          701.356
+   0.0410481          701.356
+    0.123144          695.862
+    0.205241          700.879
+    0.287337          701.017
+    0.369433          719.147
+    0.451529          714.685
+    0.533625          723.339
+    0.615722          712.246
+    0.697818          690.939
+    0.779914          712.243
+     0.86201          706.729
+    0.944107          718.037
+      1.0262          694.637
+      1.1083          702.622
+      1.1904           691.71
+     1.27249          720.161
+     1.35459          711.025
+     1.43668          694.749
+     1.51878          723.401
+     1.60088          701.033
+     1.68297          713.241
+     1.76507          703.663
+     1.84716           702.56
+     1.92926          698.712
+     2.01136          705.411
