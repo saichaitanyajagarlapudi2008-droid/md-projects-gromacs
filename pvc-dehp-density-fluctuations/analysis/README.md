@@ -17,3 +17,7 @@ python ree_vs_T.py chain_ree.csv --t0 600 --rate 6 --bin 10
 Requirements: Python 3, MDAnalysis, NumPy, networkx, pandas.
 
 Scripts were written with AI assistance, then tested and adapted for this system.
+
+- `run_windows.sh`: MSD of DEHP centres of mass (`gmx msd -mol`) in 20 K windows of the 600 → 300 K slow cool
+- `loglog.py`: log–log MSD slope (α) for one window, to check where the MSD is linear
+- `arrhenius.py`: D from the linear part of each window, flags subdiffusive windows, Arrhenius fit
